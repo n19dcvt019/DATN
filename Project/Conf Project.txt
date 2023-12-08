@@ -1,0 +1,62 @@
+Step 1: Config devices on area 1
+R_DC1, R_DC2, Server_DC   Set ip address
+SW_DC Config trunking, config on e1/0
+
+Step2: Config devices on area 2
+R_DR1, R_DR2, Server_DR   Set ip address
+SW_DR Config trunking, config on e1/0
+
+Step 3: Config on Area 0
+SW_MPLS config trunking
+Config connector nodes     Set ip address
+
+Step 4: Config devices on area 3
+BR_HCM1, BR_HCM2 Set ip address
+BR_HCM1 config DHCP cho 2 vlan
+SW_HCM Trunking port, Access vlan
+
+Step 5: Config devices on area 4
+BR_BD1, BR_BD2 Set ip address
+BR_BD1 config DHCP cho 2 vlan
+SW_BD Trunking port, Access vlan
+
+Step 6: Config OSPF 1 on all area 
+
+Step 7: Config ip address on cloud internet 
+
+Step 8: Config NAT on all Router_1
+
+Step 9: Config tunnel 
+BR_HCM1 --> R_DC1, R_DR1
+BR_BD1  --> R_DC1, R_DR1
+
+
+
+
+
+
+AREA 1
+R_DC1   ansible_host=192.168.22.11
+R_DC2   ansible_host=192.168.22.12
+SW_DC   ansible_host=192.168.22.13
+
+AREA 2
+R_DR1   ansible_host=192.168.22.21
+R_DR2   ansible_host=192.168.22.22
+SW_DR   ansible_host=192.168.22.23
+
+AREA 0 
+SW_MPLS  ansible_host=192.168.22.24
+
+AREA 3
+BR_HCM1  ansible_host=192.168.22.31
+BR_HCM2  ansible_host=192.168.22.32
+SW_HCM   ansible_host=192.168.22.33
+
+AREA 4 
+BR_BD1   ansible_host=192.168.22.41
+BR_BD2   ansible_host=192.168.22.42
+SW_BD    ansible_host=192.168.22.43
+
+
+ISP ansible_host=192.168.22.50

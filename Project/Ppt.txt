@@ -1,0 +1,38 @@
+Slide 1
+- Tên đề tài, MSĐT, SV thực hiện, MSSV, lớp, GVHD
+
+Slide 2
+- Nội dung thực hiện ( theo bản ĐATN)
+
+Slide 3
+- Nội dung trình bày ( nội dung chính sẽ trình bày tại Hội đồngg bảo vệ đồ án)
+
+
+Slide 4
+Giới thiệu về quản trị mạng 
+Giới thiệu sơ bộ về tự động hóa
+Lợi ích của tự động hóa
+Tự động hóa trong quản trị mạng
+
+Slide 5
+Giới thiệu sơ lược về ansible
+- Khái niệm, lịch sử
+- Tại sao nên sử dụng ansible, và lợi ích của ansible
+
+Slide 6
+Các tp của ansible
+- thông qua kiến trúc
+- giới thiệu sơ qua từng cái cũng được  
+- cho hình ảnh ví dụ ( nếu có)
+
+Slide 7
+Nguyên lí hoạt động ( cho hình ảnh lên)
+
+Slide 8
+- Giới thiệu về YAML ( cho hình ảnh ví dụ)
+- Đặc điểm cấu trúc của YAML
+- Giới thiệu các ưu, nhược điểm 
+
+Slide 9 
+- Nêu các ứng dụng của ansible 
+- Và ứng dụng của ansible trong quản trị mạng
